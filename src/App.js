@@ -1,20 +1,7 @@
-// import React from "react";
-// import "./App.css";
+
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <p>
-//         Read through the instructions in the README.md file to build your NASA
-//         app! Have fun 🚀!
-//       </p>
-//     </div>
-//   );
-// }
-
-// export default App;
+import "./index.css";
 
 function App() {
   const [pic, setPic] = useState([]);
@@ -23,7 +10,11 @@ function App() {
           setPic(response.data);
       });
   }, []);
-}
   console.log(pic);
+  return <div></div>
 
-  export default App;
+};
+
+
+  
+export default App;
